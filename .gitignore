@@ -1,0 +1,12 @@
+# 生成ファイル
+junkin_raw.csv
+junkin_izanami.csv
+
+# ローカルバックアップ
+*.bk
+
+# OS / エディタ
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
