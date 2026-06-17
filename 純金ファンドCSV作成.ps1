@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 $rawFile = "junkin_raw.csv"
 $outFile = "junkin_izanami.csv"
@@ -10,7 +10,8 @@ $response = Invoke-WebRequest `
     -Headers @{
         "User-Agent" = "Mozilla/5.0"
         "Referer" = "https://fs.bk.mufg.jp/webasp/mufg/fund/detail/chart/m00340220.html"
-    }
+    } `
+    -UseBasicParsing
 
 $encoding = [System.Text.Encoding]::GetEncoding(932)
 $csvText = $encoding.GetString($response.Content)
