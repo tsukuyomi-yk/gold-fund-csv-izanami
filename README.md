@@ -27,7 +27,6 @@ PowerShell でこのフォルダに移動して実行します。
 
 | ファイル | 内容 |
 | --- | --- |
-| `junkin_raw.csv` | 日付と基準価額だけの確認用CSV |
 | `junkin_izanami.csv` | イザナミ取り込み用CSV |
 
 ## イザナミへの取り込み
@@ -45,7 +44,7 @@ Date,Open,High,Low,Close,Volume
 
 ## 注意
 
-- `junkin_raw.csv` や `junkin_izanami.csv` を Excel などで開いたまま実行すると、ファイルロックで書き込みに失敗します。
+- `junkin_izanami.csv` を Excel などで開いたまま実行すると、ファイルロックで書き込みに失敗します。
 - 取得元CSVの仕様が変わった場合、正しく変換できないことがあります。
 - 投資判断はご自身の責任で行ってください。
 - このスクリプトはイザナミ公式ツールではありません。
